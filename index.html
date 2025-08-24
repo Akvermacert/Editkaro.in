@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EditKaro.in - Professional Video Editing</title>
+  <meta name="description"
+    content="EditKaro.in provides professional video editing services — wedding, YouTube, travel, corporate, gaming edits, color grading, and more.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <a href="#home-section" class="logo-link">
+      <span class="logo">🔴 EditKaro.in</span>
+    </a>
+    <nav>
+      <ul type="none" style="display: flex;">
+        <li><a href="#home-section">HOME</a></li>
+        <li><a href="#about-section">ABOUT</a></li>
+        <li><a href="#video-part">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="home-section" id="home-section">
+    <div class="hero-content">
+      <h1 id="editkaro">EditKaro.in</h1>
+      <h1>Professional Video Editing Made Simple</h1>
+      <h3>Your stories, our editing expertise — delivered with precision, speed, and creativity.</h3>
+      <p>
+        From cinematic wedding highlights to viral YouTube content and corporate presentations,
+        EditKaro.in transforms your raw footage into stunning, polished videos.
+        We combine advanced editing skills, color grading, and creative storytelling
+        to ensure every frame captures attention and leaves an impact.
+      </p>
+      <div class="hero-buttons">
+        <button class="primary-btn" onclick="scrollToDiv('video-part')">Explore Portfolio</button>
+        <button class="secondary-btn" onclick="scrollToDiv('contact')">Start Your Project</button>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="about-section" id="about-section">
+    <h2>About EditKaro.in</h2>
+    <p>EditKaro.in is a professional video editing service that helps creators, brands, and businesses craft stunning
+      videos.
+      From cinematic highlights to social media-ready content, our edits are precise, creative, and tailored to your
+      style.</p>
+    <ul>
+      <li>🎬 Wedding, Travel, Corporate, YouTube & Gaming edits</li>
+      <li>⚡ Fast delivery without compromising quality</li>
+      <li>💰 Affordable pricing with premium results</li>
+      <li>📈 Videos that boost engagement and branding</li>
+    </ul>
+  </section>
+  <!-- Why Choose Us Section -->
+  <section class="why-us">
+    <h2>Why Choose EditKaro.in?</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>High Quality</h3>
+        <p>Every frame is color-graded, polished, and professionally edited.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Fast Delivery</h3>
+        <p>We deliver your edits on time, every time, without delays.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Affordable Pricing</h3>
+        <p>Get premium results at a price that fits your budget.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Custom Style</h3>
+        <p>Your video, your way — every project is tailored to your vision.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio Filter Section -->
+  <div class="filter-buttons" id="video-part">
+    <button class="active" onclick="filterVideos('all')">All</button>
+    <button onclick="filterVideos('wedding')">Wedding</button>
+    <button onclick="filterVideos('youtube')">YouTube</button>
+    <button onclick="filterVideos('corporate')">Corporate</button>
+    <button onclick="filterVideos('travel')">Travel</button>
+    <button onclick="filterVideos('gaming')">Gaming</button>
+    <button onclick="filterVideos('color')">Color Grading</button>
+  </div>
+
+  <!-- Video Portfolio Grid -->
+  <div class="video-grid">
+    <div class="video-card" data-category="wedding">
+      <video src="sample1.mp4" autoplay muted loop></video>
+      <div class="overlay">Wedding Video</div>
+    </div>
+    <div class="video-card" data-category="youtube">
+      <video src="sample2.mp4" muted loop></video>
+      <div class="overlay">YouTube Edit</div>
+    </div>
+    <div class="video-card" data-category="corporate">
+      <video src="sample3.mp4" autoplay muted loop></video>
+      <div class="overlay">Corporate Video</div>
+    </div>
+    <div class="video-card" data-category="travel">
+      <video src="sample4.mp4" preload="auto" muted loop></video>
+      <div class="overlay">Travel Vlog</div>
+    </div>
+    <div class="video-card" data-category="gaming">
+      <video src="sample5.mp4" muted loop></video>
+      <div class="overlay">Gaming Edit</div>
+    </div>
+    <div class="video-card" data-category="color">
+      <video src="sample6.mp4" preload="metadata" muted loop></video>
+      <div class="overlay">Color Grading</div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="contact" id="contact">
+    <h2 style="text-align:center; margin-bottom: 1rem;">Get in Touch</h2>
+    <div class="contact-container">
+      <!-- Left: Direct contact info -->
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><strong>Phone:</strong> <a href="tel:+919999999999">+91 99999 99999</a></p>
+        <p><strong>Email:</strong> <a href="mailto:contact@editkaro.in">contact@editkaro.in</a></p>
+        <div class="social-links">
+          <a href="https://instagram.com" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"
+              class="social-icon">
+            Instagram
+          </a>
+          <a href="https://youtube.com" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube"
+              class="social-icon">
+            YouTube
+          </a>
+          <a href="https://wa.me/919999999999" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp"
+              class="social-icon">
+            WhatsApp
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Right: Contact form -->
+      <form class="contact-form" id="main-contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Phone Number (optional)" pattern="[0-9]{10}">
+        <select name="video_type" required>
+          <option value="">-- Select Type of Video --</option>
+          <option value="wedding">Wedding Video</option>
+          <option value="travel">Travel Vlog</option>
+          <option value="corporate">Corporate Video</option>
+          <option value="youtube">YouTube Video</option>
+          <option value="gaming">Gaming Edit</option>
+          <option value="color">Color Grading Only</option>
+          <option value="other">Other (Describe Below)</option>
+        </select>
+        <textarea name="message" placeholder="Tell us about your project..." required></textarea>
+        <button type="submit">Send Request</button>
+      </form>
+    </div>
+  </div>
+
+
+
+  <footer>
+    &copy; 2025 EditKaro.in | All Rights Reserved
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
